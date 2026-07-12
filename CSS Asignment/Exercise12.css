@@ -1,0 +1,51 @@
+body{
+    background: #0e1113;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+}
+.tweet-header{
+    background: rgb(22, 24, 28);
+    border: 1px solid rgb(47, 51, 54);
+    border-radius: 16px;
+    padding: 16px;
+    width: 500px;
+}
+.avatar{
+    width: 40px;
+    height: 40px;
+    background: rgb(47, 51, 54);
+    border-radius: 50px;
+
+}
+.username{
+    color: rgb(231, 233, 234);
+    font-size: 14px;
+    font-weight: 700;
+}
+.tweet-content{
+    color: rgb(231, 233, 234);
+    font-size: 15px ;
+    font-weight: normal;
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+.tweet-timestamp{
+    color: rgb(113, 118, 123);
+    font-size: 15px;
+    font-weight: normal;
+    margin-bottom: 16px;
+    border-bottom: 1px solid rgb(47, 51, 54);
+}
+.tweet-actions{
+    display: flex;
+    justify-content: space-around;
+}
+.tweet-action button{
+    background: none;
+    border: none;
+    color: rgb(113, 118, 123);
+    font-size: 14px;
+    cursor: pointer;
+    padding: 8px;
+}

@@ -1,0 +1,36 @@
+:root{
+    --color-primary: #2a9d8f;
+    --color-text: #1a1a2e;
+    --color-bg: #ffffffff;
+    --spacing-unit: 16px;
+    --radius: 8px
+}
+body{
+    background: var(--color-bg);
+    color: var(--color-text);
+    font-family: sans-serif;
+    padding: var(--spacing-unit);
+}
+.card{
+    border: 1px solid #ddd;
+    border-radius: var(--radius);
+    padding: var(--spacing-unit);
+    margin-bottom: var(--spacing-unit);
+}
+.btn{
+    background-color: var(--color-primary);
+    color: var(--color-bg);
+    border: none;
+    padding: 10px 40px;
+    border-radius: var(--radius);
+    font-size: 1rem;
+    cursor: pointer;
+}
+/*Overridding variables locally  jus for a particular element
+everything is going to stay thesame, only this card picks the colors defined here*/
+.card--dark{
+    --bg-color: #1a1a2e;
+    --color-text: #f1faee;
+    background: var(--bg-color);
+    color: var(--color-text);
+}

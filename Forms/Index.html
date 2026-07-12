@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Contact Form</h1>
+    <form action="/submit" method="post">
+        <fieldset>
+            <legend>Your details</legend>
+            <label for="name">Full name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+             <label for="age">Age:</label>
+             <input type="number" id="Age" name="Age" requierd>
+        </fieldset>
+        <!--read message content-->
+        <fieldset>
+            <legend>Your message</legend>
+            <label for="Topic">Topic</label>
+            <select name="topic" id="topic">
+                <option value="general">General inquiry</option>
+                <option value="support">Support</option>
+                <option value="feedback">Feedback</option>
+            </select>
+            <label for="Message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <!--contact preference-->
+            <fieldset>
+                <legend>prefered contact method</legend>
+                <input type="radio" name="tell" id="email" value="Email" check>
+                <label for="Contact email">Email</label>
+                <input type="radio" name="tell" id="tell" value="phone">
+                <label for="tell">phone</label>
+            </fieldset>
+            <input type="checkbox" name="subscribe" id="subscribe">
+            <label for="subscribe">subscribe to news later</label>
+        </fieldset>
+        <button>Submit</button>
+
+    </form>
+</body>
+</html>
